@@ -154,7 +154,7 @@ print_agent_command() {
   cat <<'COMMAND'
 Safe agent manual install template:
 
-curl -fsSL https://raw.githubusercontent.com/suckdrygod/tcpping/main/install.sh | sudo bash -s -- \
+curl -fsSL https://raw.githubusercontent.com/Rookib/tcpping/main/install.sh | sudo bash -s -- \
   -e https://agent.example.com \
   -t YOUR_NODE_TOKEN \
   --month-rotate 0 \
@@ -200,11 +200,11 @@ else
   echo "Create it manually, or rerun with --create-network when you are ready."
 fi
 
-clone_or_update "komari" "${KOMARI_REPO:-https://github.com/suckdrygod/komari.git}" "${KOMARI_REF:-release/1.2.6-tg.32}" "${KOMARI_COMMIT:-689968acc219f227338e473a886f5590cee6026d}"
-clone_or_update "tcpping" "${TCPPING_REPO:-https://github.com/suckdrygod/tcpping.git}" "${TCPPING_REF:-v1.2.13-safe.13}" "${TCPPING_COMMIT:-aa379696c97d9ad09eff82b0065a89cfa00ae3a0}"
-clone_or_update "komari-web" "${KOMARI_WEB_REPO:-https://github.com/suckdrygod/komari-web.git}" "${KOMARI_WEB_REF:-radix}" "${KOMARI_WEB_COMMIT:-96d3c74eacf476aa915d6448fb95ee9663942b98}"
+clone_or_update "komari" "${KOMARI_REPO:-https://github.com/Rookib/komari.git}" "${KOMARI_REF:-release/1.2.6-tg.32}" "${KOMARI_COMMIT:-689968acc219f227338e473a886f5590cee6026d}"
+clone_or_update "tcpping" "${TCPPING_REPO:-https://github.com/Rookib/tcpping.git}" "${TCPPING_REF:-v1.2.13-safe.13}" "${TCPPING_COMMIT:-aa379696c97d9ad09eff82b0065a89cfa00ae3a0}"
+clone_or_update "komari-web" "${KOMARI_WEB_REPO:-https://github.com/Rookib/komari-web.git}" "${KOMARI_WEB_REF:-radix}" "${KOMARI_WEB_COMMIT:-96d3c74eacf476aa915d6448fb95ee9663942b98}"
 
-docker pull "${KOMARI_IMAGE:-ghcr.io/suckdrygod/komari:1.2.6-tg.32}"
+docker pull "${KOMARI_IMAGE:-ghcr.io/rookib/komari:1.2.6-tg.32}"
 
 profiles=()
 if [ "$START_BACKEND" = true ]; then

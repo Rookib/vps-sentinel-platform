@@ -14,9 +14,9 @@ VPS Sentinel Platform 是一个面向 Komari / TCPing 安全探针体系的“�
 
 | 子系统 | 仓库 | 锁定版本 | 锁定提交 |
 | --- | --- | --- | --- |
-| Komari Panel | [suckdrygod/komari](https://github.com/suckdrygod/komari) | `release/1.2.6-tg.32` | `689968acc219f227338e473a886f5590cee6026d` |
-| Safe Agent / TCPing | [suckdrygod/tcpping](https://github.com/suckdrygod/tcpping) | `v1.2.13-safe.13` | `aa379696c97d9ad09eff82b0065a89cfa00ae3a0` |
-| Komari Web | [suckdrygod/komari-web](https://github.com/suckdrygod/komari-web) | `radix` snapshot | `96d3c74eacf476aa915d6448fb95ee9663942b98` |
+| Komari Panel | [Rookib/komari](https://github.com/Rookib/komari) | `release/1.2.6-tg.32` | `689968acc219f227338e473a886f5590cee6026d` |
+| Safe Agent / TCPing | [Rookib/tcpping](https://github.com/Rookib/tcpping) | `v1.2.13-safe.13` | `aa379696c97d9ad09eff82b0065a89cfa00ae3a0` |
+| Komari Web | [Rookib/komari-web](https://github.com/Rookib/komari-web) | `radix` snapshot | `96d3c74eacf476aa915d6448fb95ee9663942b98` |
 
 > 禁止使用 `latest` 作为生产部署依据。所有组件都通过 ref/commit 固定，生产镜像使用明确版本号，禁止跟随 `latest`。
 
@@ -41,7 +41,7 @@ scripts/
 ## 快速开始
 
 ```bash
-git clone https://github.com/suckdrygod/vps-sentinel-platform.git
+git clone https://github.com/Rookib/vps-sentinel-platform.git
 cd vps-sentinel-platform
 
 # 只拉取版本锁定源码、生成 .env、准备外部网络；默认不启动服务
